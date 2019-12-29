@@ -1,0 +1,2 @@
+1.30进制定时器count30（VHDL），倒计时计数器master(VHDL)，扫描显示模块scan（原理图文件）；
+2.主工程overall，例化上述三个元件。

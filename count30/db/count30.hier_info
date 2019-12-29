@@ -1,0 +1,15 @@
+|count30
+cin => count[4].CLK
+cin => count[3].CLK
+cin => count[2].CLK
+cin => count[1].CLK
+cin => count[0].CLK
+cin => cnrn~reg0.CLK
+c[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+cnrn <= cnrn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

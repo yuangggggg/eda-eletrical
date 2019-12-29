@@ -1,0 +1,414 @@
+Simulator report for master
+Sat Dec 28 23:31:23 2019
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 188 nodes    ;
+; Simulation Coverage         ;      70.92 % ;
+; Total Number of Transitions ; 97477        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; master.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      70.92 % ;
+; Total nodes checked                                 ; 188          ;
+; Total output ports checked                          ; 196          ;
+; Total output ports with complete 1/0-value coverage ; 139          ;
+; Total output ports with no 1/0-value coverage       ; 57           ;
+; Total output ports with no 1-value coverage         ; 57           ;
+; Total output ports with no 0-value coverage         ; 57           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                  ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                            ; Output Port Type ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+; |master|count2[0]                                                           ; |master|count2[0]                                                           ; regout           ;
+; |master|count~0                                                             ; |master|count~0                                                             ; out              ;
+; |master|count~1                                                             ; |master|count~1                                                             ; out              ;
+; |master|count~2                                                             ; |master|count~2                                                             ; out              ;
+; |master|count~3                                                             ; |master|count~3                                                             ; out              ;
+; |master|count1~0                                                            ; |master|count1~0                                                            ; out              ;
+; |master|count1~1                                                            ; |master|count1~1                                                            ; out              ;
+; |master|count1~2                                                            ; |master|count1~2                                                            ; out              ;
+; |master|count2~0                                                            ; |master|count2~0                                                            ; out              ;
+; |master|count2~1                                                            ; |master|count2~1                                                            ; out              ;
+; |master|count2~2                                                            ; |master|count2~2                                                            ; out              ;
+; |master|count2~3                                                            ; |master|count2~3                                                            ; out              ;
+; |master|count2~4                                                            ; |master|count2~4                                                            ; out              ;
+; |master|count2~5                                                            ; |master|count2~5                                                            ; out              ;
+; |master|count2~6                                                            ; |master|count2~6                                                            ; out              ;
+; |master|count2~7                                                            ; |master|count2~7                                                            ; out              ;
+; |master|count[3]                                                            ; |master|count[3]                                                            ; regout           ;
+; |master|count[2]                                                            ; |master|count[2]                                                            ; regout           ;
+; |master|count[1]                                                            ; |master|count[1]                                                            ; regout           ;
+; |master|count[0]                                                            ; |master|count[0]                                                            ; regout           ;
+; |master|count1[2]                                                           ; |master|count1[2]                                                           ; regout           ;
+; |master|count1[1]                                                           ; |master|count1[1]                                                           ; regout           ;
+; |master|count1[0]                                                           ; |master|count1[0]                                                           ; regout           ;
+; |master|count2[3]                                                           ; |master|count2[3]                                                           ; regout           ;
+; |master|count2[2]                                                           ; |master|count2[2]                                                           ; regout           ;
+; |master|count2[1]                                                           ; |master|count2[1]                                                           ; regout           ;
+; |master|cp                                                                  ; |master|cp                                                                  ; out              ;
+; |master|a[0]                                                                ; |master|a[0]                                                                ; pin_out          ;
+; |master|a[1]                                                                ; |master|a[1]                                                                ; pin_out          ;
+; |master|a[2]                                                                ; |master|a[2]                                                                ; pin_out          ;
+; |master|a[3]                                                                ; |master|a[3]                                                                ; pin_out          ;
+; |master|b[0]                                                                ; |master|b[0]                                                                ; pin_out          ;
+; |master|b[1]                                                                ; |master|b[1]                                                                ; pin_out          ;
+; |master|b[2]                                                                ; |master|b[2]                                                                ; pin_out          ;
+; |master|c[0]                                                                ; |master|c[0]                                                                ; pin_out          ;
+; |master|c[1]                                                                ; |master|c[1]                                                                ; pin_out          ;
+; |master|c[2]                                                                ; |master|c[2]                                                                ; pin_out          ;
+; |master|c[3]                                                                ; |master|c[3]                                                                ; pin_out          ;
+; |master|LessThan0~16                                                        ; |master|LessThan0~16                                                        ; out0             ;
+; |master|LessThan0~17                                                        ; |master|LessThan0~17                                                        ; out0             ;
+; |master|LessThan0~18                                                        ; |master|LessThan0~18                                                        ; out0             ;
+; |master|LessThan0~19                                                        ; |master|LessThan0~19                                                        ; out0             ;
+; |master|LessThan0~20                                                        ; |master|LessThan0~20                                                        ; out0             ;
+; |master|LessThan0~21                                                        ; |master|LessThan0~21                                                        ; out0             ;
+; |master|LessThan1~12                                                        ; |master|LessThan1~12                                                        ; out0             ;
+; |master|LessThan1~13                                                        ; |master|LessThan1~13                                                        ; out0             ;
+; |master|LessThan1~14                                                        ; |master|LessThan1~14                                                        ; out0             ;
+; |master|LessThan1~15                                                        ; |master|LessThan1~15                                                        ; out0             ;
+; |master|LessThan2~16                                                        ; |master|LessThan2~16                                                        ; out0             ;
+; |master|LessThan2~17                                                        ; |master|LessThan2~17                                                        ; out0             ;
+; |master|LessThan2~18                                                        ; |master|LessThan2~18                                                        ; out0             ;
+; |master|LessThan2~19                                                        ; |master|LessThan2~19                                                        ; out0             ;
+; |master|LessThan2~20                                                        ; |master|LessThan2~20                                                        ; out0             ;
+; |master|LessThan2~21                                                        ; |master|LessThan2~21                                                        ; out0             ;
+; |master|lpm_add_sub:Add2|result_node[1]                                     ; |master|lpm_add_sub:Add2|result_node[1]                                     ; out0             ;
+; |master|lpm_add_sub:Add2|result_node[2]                                     ; |master|lpm_add_sub:Add2|result_node[2]                                     ; out0             ;
+; |master|lpm_add_sub:Add2|result_node[3]                                     ; |master|lpm_add_sub:Add2|result_node[3]                                     ; out0             ;
+; |master|lpm_add_sub:Add2|result_node[4]                                     ; |master|lpm_add_sub:Add2|result_node[4]                                     ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]~1                  ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]~1                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~2                  ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~2                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~3                  ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~3                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~4                  ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~4                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]                    ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~4                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~4                                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~5                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~5                                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~6                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~6                                  ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~11                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~11                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~12                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~12                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~13                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~13                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~14                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~14                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~15                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~15                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~16                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~16                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~17                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~17                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~18                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~18                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~19                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~19                                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |master|lpm_add_sub:Add1|result_node[1]                                     ; |master|lpm_add_sub:Add1|result_node[1]                                     ; out0             ;
+; |master|lpm_add_sub:Add1|result_node[2]                                     ; |master|lpm_add_sub:Add1|result_node[2]                                     ; out0             ;
+; |master|lpm_add_sub:Add1|result_node[3]                                     ; |master|lpm_add_sub:Add1|result_node[3]                                     ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                  ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~1                  ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                  ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~2                  ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                  ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~3                  ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~5                                  ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~9                                  ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |master|lpm_add_sub:Add1|addcore:adder|_~10                                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |master|lpm_add_sub:Add1|addcore:adder|_~11                                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |master|lpm_add_sub:Add1|addcore:adder|_~12                                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |master|lpm_add_sub:Add1|addcore:adder|_~13                                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |master|lpm_add_sub:Add1|addcore:adder|_~14                                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |master|lpm_add_sub:Add1|addcore:adder|_~15                                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |master|lpm_add_sub:Add0|result_node[1]                                     ; |master|lpm_add_sub:Add0|result_node[1]                                     ; out0             ;
+; |master|lpm_add_sub:Add0|result_node[2]                                     ; |master|lpm_add_sub:Add0|result_node[2]                                     ; out0             ;
+; |master|lpm_add_sub:Add0|result_node[3]                                     ; |master|lpm_add_sub:Add0|result_node[3]                                     ; out0             ;
+; |master|lpm_add_sub:Add0|result_node[4]                                     ; |master|lpm_add_sub:Add0|result_node[4]                                     ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~5                                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~12                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~13                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~14                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~15                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~16                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~17                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~18                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~19                                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
++-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                ;
++-----------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                       ; Output Port Type ;
++-----------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |master|rst                                                                 ; |master|rst                                                            ; out              ;
+; |master|ma[0]                                                               ; |master|ma[0]                                                          ; out              ;
+; |master|ma[1]                                                               ; |master|ma[1]                                                          ; out              ;
+; |master|ma[2]                                                               ; |master|ma[2]                                                          ; out              ;
+; |master|ma[3]                                                               ; |master|ma[3]                                                          ; out              ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]               ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~0                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~0                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~1                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~1                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~2                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~2                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~3                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~3                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]~1                      ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]~1                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[3]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[2]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[1]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~7                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~7                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~8                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~8                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~9                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~9                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~10                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~10                            ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[0] ; cout             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]               ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~0                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~1                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~2                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~3                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                      ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[2]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[1]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~6                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~7                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~8                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0] ; cout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]               ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~0                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~1                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~2                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~3                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[3]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[2]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[1]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~7                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~8                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~9                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~10                            ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0] ; cout             ;
++-----------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                ;
++-----------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                                   ; Output Port Name                                                       ; Output Port Type ;
++-----------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |master|rst                                                                 ; |master|rst                                                            ; out              ;
+; |master|ma[0]                                                               ; |master|ma[0]                                                          ; out              ;
+; |master|ma[1]                                                               ; |master|ma[1]                                                          ; out              ;
+; |master|ma[2]                                                               ; |master|ma[2]                                                          ; out              ;
+; |master|ma[3]                                                               ; |master|ma[3]                                                          ; out              ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[0]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; |master|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]               ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~0                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~0                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~1                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~1                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~2                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~2                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~3                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~3                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]~1                      ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]~1                 ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[4]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[3]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[2]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; |master|lpm_add_sub:Add2|addcore:adder|datab_node[1]                   ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~7                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~7                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~8                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~8                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~9                                  ; |master|lpm_add_sub:Add2|addcore:adder|_~9                             ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|_~10                                 ; |master|lpm_add_sub:Add2|addcore:adder|_~10                            ; out0             ;
+; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |master|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[0] ; cout             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[0]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |master|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]               ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~0                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~1                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~2                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~3                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                      ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]~1                 ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[3]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[2]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |master|lpm_add_sub:Add1|addcore:adder|datab_node[1]                   ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~6                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~7                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |master|lpm_add_sub:Add1|addcore:adder|_~8                             ; out0             ;
+; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |master|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0] ; cout             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[0]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |master|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]               ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~0                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~1                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~2                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~3                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                 ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[4]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[3]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[2]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |master|lpm_add_sub:Add0|addcore:adder|datab_node[1]                   ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~7                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~8                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |master|lpm_add_sub:Add0|addcore:adder|_~9                             ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |master|lpm_add_sub:Add0|addcore:adder|_~10                            ; out0             ;
+; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |master|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0] ; cout             ;
++-----------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Full Version
+    Info: Processing started: Sat Dec 28 23:31:23 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off master -c master
+Info: Using vector source file "E:/master/master.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      70.92 %
+Info: Number of transitions in simulation is 97477
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Sat Dec 28 23:31:23 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,31 @@
+|master
+cp => count[3].CLK
+cp => count[2].CLK
+cp => count[1].CLK
+cp => count[0].CLK
+cp => count1[3].CLK
+cp => count1[2].CLK
+cp => count1[1].CLK
+cp => count1[0].CLK
+cp => count2[3].CLK
+cp => count2[2].CLK
+cp => count2[1].CLK
+cp => count2[0].CLK
+ma[0] => count2~3.DATAA
+ma[1] => count2~2.DATAA
+ma[2] => count2~1.DATAA
+ma[3] => count2~0.DATAA
+a[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+a[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+a[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+a[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+b[0] <= count1[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= count1[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= count1[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= count1[3].DB_MAX_OUTPUT_PORT_TYPE
+c[0] <= count2[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= count2[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= count2[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= count2[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

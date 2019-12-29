@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sun Dec 29 12:53:20 2019
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Full Version
+Revision Name : scan
+Top-level Entity Name : scan
+Family : Cyclone
+Device : EP1C6Q240C8
+Timing Models : Final
+Total logic elements : 30 / 5,980 ( < 1 % )
+Total pins : 42 / 185 ( 23 % )
+Total virtual pins : 0
+Total memory bits : 0 / 92,160 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
